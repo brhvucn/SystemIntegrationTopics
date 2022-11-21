@@ -64,8 +64,14 @@
 ### Business
 #### Goal 1: Business / IT Alignment
 ##### Align IT with the business goals and strategy
+###### _Benefit:_ `The IT department works to improve the overall shape of the business`
+###### _Drawback:_ `We often fail to see how it is done, because we confuse the CTO with the CIO` 
 ##### Trace services back to business needs
+###### _Benefit:_ `We drive the innovation from the business needs. Everything we do is because it can improve the business`
+###### _Drawback:_ `We fail to see the synergy that is in the business and the IT department supporting each other.`
 ##### Services are defined by business/strategy goals
+###### _Benefit:_ `In the internal IT department it is the need for business that drives the implementation.`
+###### _Drawback:_ `Frustration might arise in the IT department, because the "power" lies with the business`
 ##### Establish a general Business Architecture
 ##### Align IT Resources with business needs
 #### Goal 2: Business Agility
@@ -86,7 +92,15 @@
 ### Service Repository
 ## ESB
 ### General
-### Patterns
-#### Channel
-#### Routers
-#### Transformation
+#### Asynchronous, loosely coupled, relies on passing messages
+#### Sender do not know about receiver
+### Channels
+#### Point-to-point channel, ensures that a message only consumed _once_
+### Endpoints
+### Routers
+### Transformation
+### Monitoring
+#### Control Bus
+##### Use the messaging system to send config messages
+##### Collect Exceptions and log messages
+##### Do not interfere with the business logic, use a separate bus
